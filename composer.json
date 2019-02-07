@@ -1,7 +1,7 @@
 {
     "name": "horde/dav",
     "description": "WebDAV, CalDAV, and CardDAV library",
-    "type": "library",
+    "type": "horde-library",
     "homepage": "https://www.horde.org",
     "license": "BSD-2-Clause",
     "authors": [
@@ -12,20 +12,36 @@
         }
     ],
     "version": "2.0.0",
-    "time": "2017-11-11",
+    "time": "2019-02-07",
     "repositories": [
         {
-            "type": "pear",
-            "url": "https://pear.horde.org"
+            "url": "https://github.com/horde/Auth",
+            "type": "vcs"
+        },
+        {
+            "url": "https://github.com/horde/Core",
+            "type": "vcs"
+        },
+        {
+            "url": "https://github.com/horde/Http",
+            "type": "vcs"
+        },
+        {
+            "url": "https://github.com/horde/Stream",
+            "type": "vcs"
+        },
+        {
+            "url": "https://github.com/horde/Translation",
+            "type": "vcs"
         }
     ],
     "require": {
         "php": "^5.4.1 || ^7",
-        "pear-pear.horde.org/Horde_Auth": "^2",
-        "pear-pear.horde.org/Horde_Core": "^2",
-        "pear-pear.horde.org/Horde_Http": "^2",
-        "pear-pear.horde.org/Horde_Stream": "^1.2",
-        "pear-pear.horde.org/Horde_Translation": "^2.2",
+        "horde/Auth": "^2",
+        "horde/Core": "^2",
+        "horde/Http": "^2",
+        "horde/Stream": "^1.2",
+        "horde/Translation": "^2.2",
         "ext-ctype": "*",
         "ext-date": "*",
         "ext-dom": "*",
@@ -38,10 +54,6 @@
     },
     "suggest": {
         "ext-curl": "*"
-    },
-    "replace": {
-        "pear-pear.horde.org/Horde_Dav": "2.*",
-        "pear-horde/Horde_Dav": "2.*"
     },
     "autoload": {
         "psr-0": {
