@@ -12,36 +12,21 @@
         }
     ],
     "version": "2.0.0",
-    "time": "2019-02-07",
+    "time": "2019-05-02",
     "repositories": [
         {
-            "url": "https://github.com/horde/Auth",
-            "type": "vcs"
-        },
-        {
-            "url": "https://github.com/horde/Core",
-            "type": "vcs"
-        },
-        {
-            "url": "https://github.com/horde/Http",
-            "type": "vcs"
-        },
-        {
-            "url": "https://github.com/horde/Stream",
-            "type": "vcs"
-        },
-        {
-            "url": "https://github.com/horde/Translation",
-            "type": "vcs"
+            "type": "composer",
+            "url": "https://horde-satis.maintaina.com"
         }
     ],
     "require": {
+        "horde/horde-installer-plugin": "dev-master",
         "php": "^5.4.1 || ^7",
-        "horde/Auth": "^2",
-        "horde/Core": "^2",
-        "horde/Http": "^2",
-        "horde/Stream": "^1.2",
-        "horde/Translation": "^2.2",
+        "horde/auth": "dev-master",
+        "horde/core": "dev-master",
+        "horde/http": "dev-master",
+        "horde/stream": "dev-master",
+        "horde/translation": "dev-master",
         "ext-ctype": "*",
         "ext-date": "*",
         "ext-dom": "*",
