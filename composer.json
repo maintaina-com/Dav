@@ -12,7 +12,7 @@
         }
     ],
     "version": "2.0.0",
-    "time": "2019-05-02",
+    "time": "2019-11-17",
     "repositories": [
         {
             "type": "composer",
@@ -22,6 +22,7 @@
     "require": {
         "horde/horde-installer-plugin": "dev-master",
         "php": "^5.4.1 || ^7",
+        "sabe/dav": "~2.0.0",
         "horde/auth": "dev-master",
         "horde/core": "dev-master",
         "horde/http": "dev-master",
